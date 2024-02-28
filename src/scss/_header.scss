@@ -1,0 +1,14 @@
+@import "helpers";
+@import "navbar";
+
+header {
+  padding: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: $header-height;
+
+  h1 {
+    font-size: 20px;
+  }
+}

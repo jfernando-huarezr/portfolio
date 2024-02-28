@@ -1,0 +1,39 @@
+@import "helpers";
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: $header-height;
+  background-color: white;
+  text-align: center;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.menu-control {
+  border: 0;
+  background-color: white;
+  padding: 5px;
+}
+
+.visible {
+  display: block;
+  transform-origin: top;
+  animation: expand 500ms ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes expand {
+  0% {
+    transform: scaleY(0);
+  }
+
+  70% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
