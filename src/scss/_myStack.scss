@@ -1,0 +1,16 @@
+@import "helpers";
+
+#myStack {
+  .container {
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      li {
+        width: 60px;
+      }
+    }
+  }
+}

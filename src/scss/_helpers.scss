@@ -1,5 +1,10 @@
 $header-height: 80px;
 
+$primary-light: #f9f7f7;
+$primary-dark: #112d4e;
+$secondary-light: #dbe2ef;
+$secondary-dark: #3f72af;
+
 .no-bullets {
   list-style: none;
 }
@@ -18,4 +23,10 @@ $header-height: 80px;
   opacity: 1;
   height: auto;
   overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
