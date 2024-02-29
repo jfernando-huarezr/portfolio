@@ -1,0 +1,7 @@
+@import "helpers";
+
+main {
+  #aboutMe {
+    height: calc(100vh - $header-height);
+  }
+}

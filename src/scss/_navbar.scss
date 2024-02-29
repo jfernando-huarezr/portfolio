@@ -1,39 +1,29 @@
 @import "helpers";
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: $header-height;
-  background-color: white;
-  text-align: center;
-  left: 0;
-  width: 100%;
-  z-index: 0;
-}
-
-.menu-control {
-  border: 0;
-  background-color: white;
-  padding: 5px;
-}
-
-.visible {
-  display: block;
-  transform-origin: top;
-  animation: expand 500ms ease-in-out;
-  animation-fill-mode: forwards;
-}
-
-@keyframes expand {
-  0% {
+nav {
+  .dropdown-menu {
     transform: scaleY(0);
+    height: 0;
+    position: absolute;
+    top: $header-height;
+    background-color: black;
+    color: white;
+    text-align: center;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
   }
 
-  70% {
-    transform: scaleY(1.1);
+  .menu-control {
+    border: 0;
+    background-color: white;
+    padding: 5px;
   }
 
-  100% {
+  .dropdown-menu.visible {
+    height: auto;
     transform: scaleY(1);
   }
 }

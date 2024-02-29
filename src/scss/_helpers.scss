@@ -7,3 +7,15 @@ $header-height: 80px;
 .no-display {
   display: none;
 }
+
+@mixin hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+@mixin visible {
+  opacity: 1;
+  height: auto;
+  overflow: hidden;
+}
