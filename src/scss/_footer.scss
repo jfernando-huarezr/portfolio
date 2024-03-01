@@ -21,6 +21,15 @@ footer {
           max-width: 2em;
         }
       }
+
+      .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        img {
+          max-width: 4em;
+        }
+      }
     }
 
     div {
