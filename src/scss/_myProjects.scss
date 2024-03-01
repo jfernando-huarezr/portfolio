@@ -2,9 +2,9 @@
 
 #myProjects {
   text-align: center;
-  background-color: lightgoldenrodyellow;
+  background-color: $primary-light;
   .container {
-    ul {
+    .project-list {
       margin-top: 20px;
       display: flex;
       flex-direction: row;
@@ -13,7 +13,7 @@
       column-gap: 80px;
       row-gap: 50px;
 
-      li {
+      .project-card {
         flex: 0 0 auto;
         max-width: 600px;
         width: 100%;
@@ -21,9 +21,19 @@
 
         .project-container {
           .project-info {
-            text-align: left;
+            display: flex;
+            justify-content: space-between;
             background-color: white;
             padding: 10px;
+
+            .project-links {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+              img {
+                max-width: 2.2em;
+              }
+            }
           }
         }
       }

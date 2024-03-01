@@ -5,10 +5,8 @@ const buttonMenu = BODY.querySelector("nav .menu-control");
 const dropdownMenu = nav.querySelector(".dropdown-menu");
 
 export default function toggleNav() {
-  buttonMenu.addEventListener("click", (e) => {
-    if (e.target === e.currentTarget) {
-      dropdownMenu.classList.add("visible");
-    }
+  buttonMenu.addEventListener("click", () => {
+    dropdownMenu.classList.add("visible");
   });
 
   window.addEventListener("click", (e) => {

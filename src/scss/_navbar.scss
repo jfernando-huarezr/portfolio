@@ -7,7 +7,7 @@ nav {
     opacity: 0;
     position: absolute;
     top: $header-height;
-    background-color: $secondary-dark;
+    background-color: rgba($color: #000000, $alpha: 0.5);
     color: $primary-light;
     text-align: center;
     left: 0;
@@ -25,6 +25,7 @@ nav {
   .menu-control {
     border: 0;
     background-color: white;
+    max-width: 3em;
     padding: 5px;
   }
 
@@ -32,5 +33,25 @@ nav {
     opacity: 1;
     height: auto;
     transform: scaleY(1);
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    .dropdown-menu {
+      position: static;
+      width: 100%;
+      transform: none;
+      opacity: 1;
+      height: auto;
+      background-color: transparent;
+
+      flex-direction: row;
+      gap: 30px;
+    }
+
+    .menu-control {
+      display: none;
+    }
   }
 }

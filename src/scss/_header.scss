@@ -2,6 +2,9 @@
 @import "navbar";
 
 header {
+  position: sticky;
+  top: 0;
+
   padding: 20px 20px;
   display: flex;
   justify-content: space-between;
@@ -12,5 +15,16 @@ header {
 
   h1 {
     font-size: 20px;
+  }
+
+  .left,
+  .right {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  .right {
+    display: flex;
+    justify-content: right;
   }
 }
