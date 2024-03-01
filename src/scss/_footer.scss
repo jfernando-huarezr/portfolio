@@ -1,0 +1,30 @@
+footer {
+  .info-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 200px;
+    row-gap: 20px;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      ul {
+        li {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+        }
+        span img {
+          max-width: 2em;
+        }
+      }
+    }
+
+    div {
+      max-width: 400px;
+    }
+  }
+}

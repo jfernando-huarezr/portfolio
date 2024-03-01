@@ -38,9 +38,9 @@ module.exports = {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: "asset/resource",
       },
-      //babel
+
       {
-        test: /\.m?js$/,
+        test: /\.m?js$/, // babel
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",

@@ -2,6 +2,8 @@
 
 main {
   #aboutMe {
+    text-align: center;
+
     height: calc(100vh - $header-height);
     display: flex;
     align-items: center;
@@ -10,5 +12,9 @@ main {
     gap: 20px;
 
     background-color: $primary-light;
+
+    picture {
+      max-width: 900px;
+    }
   }
 }
