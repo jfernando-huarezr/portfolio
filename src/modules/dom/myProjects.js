@@ -23,10 +23,12 @@ export default function drawProjects() {
     domProject.innerHTML = `
   <div class="project-container">
   <img src="./imgs/${project.img}" alt="dummy" />
-  <h2>${project.name}</h2>
-  <p>
-    ${project.description}
-  </p>
+  <div class="project-info">
+    <h2>${project.name}</h2>
+    <p>
+      ${project.description}
+    </p>
+  </div>
 </div>
   `;
 
