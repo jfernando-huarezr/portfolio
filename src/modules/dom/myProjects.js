@@ -1,15 +1,19 @@
+import pictureProject1 from "../../imgs/picture-projects/weather.png";
+import pictureProject2 from "../../imgs/picture-projects/ichiraku.png";
+import pictureProject3 from "../../imgs/picture-projects/etch.png";
+
 const projects = [
   {
     name: "Weather App",
     description: "Weather app using javascript, html, css and webpack",
-    img: "./picture-projects/weather.png",
+    img: pictureProject1,
     link: "https://jfernando-huarezr.github.io/weather-app/",
     github: "https://github.com/jfernando-huarezr/weather-app",
   },
   {
     name: "Restaurant Page",
     description: "Restaurant page using html, css, webpack",
-    img: "./picture-projects/ichiraku.png",
+    img: pictureProject2,
     link: "https://jfernando-huarezr.github.io/odin-restaurant-page/",
     github: "https://github.com/jfernando-huarezr/odin-restaurant-page",
   },
@@ -17,7 +21,7 @@ const projects = [
   {
     name: "Etch a Sketch",
     description: "Game of Etch a Sketch using javascript, html and css",
-    img: "./picture-projects/etch.png",
+    img: pictureProject3,
     link: "https://jfernando-huarezr.github.io/etch-a-sketch/",
     github: "https://github.com/jfernando-huarezr/etch-a-sketch",
   },
@@ -33,7 +37,7 @@ export default function drawProjects() {
     domProject.classList.add("project-card");
     domProject.innerHTML = `
   <div class="project-container">
-  <img src="./imgs/${project.img}" alt="dummy" />
+  <img src="${project.img}" alt="dummy" />
   <div class="project-info">
     <div class="main-info">
       <h2>${project.name}</h2>
