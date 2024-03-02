@@ -9,10 +9,9 @@ const array = [phone, mail, linkedin, github, youtube, agatha];
 const imgs = document.querySelectorAll("footer img");
 
 export default function footerImgs() {
-  console.log(imgs);
   let i = 0;
   imgs.forEach((element) => {
     element.src = array[i];
-    i++;
+    i += 1;
   });
 }
