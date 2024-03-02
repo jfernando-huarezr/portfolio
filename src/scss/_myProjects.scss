@@ -1,7 +1,6 @@
 @import "helpers";
 
 #myProjects {
-  text-align: center;
   background-color: $primary-light;
   .container {
     .project-list {
@@ -14,6 +13,7 @@
       row-gap: 50px;
 
       .project-card {
+        text-align: left;
         flex: 0 0 auto;
         max-width: 600px;
         width: 100%;
@@ -22,16 +22,24 @@
         .project-container {
           .project-info {
             display: flex;
+            gap: 5px;
             justify-content: space-between;
             background-color: white;
+
+            .main-info {
+              min-width: 82%;
+            }
             padding: 10px;
 
             .project-links {
               display: flex;
+              flex-basis: auto;
               align-items: center;
+              justify-content: end;
               gap: 15px;
               img {
                 max-width: 2.2em;
+                min-width: 1em;
               }
             }
           }

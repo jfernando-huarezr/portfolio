@@ -6,6 +6,7 @@
 
 * {
   font-family: "Roboto";
+  scroll-behavior: smooth !important;
 }
 
 img {
@@ -14,7 +15,7 @@ img {
 }
 
 section {
-  padding: 50px 20px;
+  padding: $header-height 20px;
 }
 
 h1 {

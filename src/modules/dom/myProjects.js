@@ -1,17 +1,25 @@
 const projects = [
   {
-    name: "Project 1",
-    description: "Description 1",
-    img: "dummy.jpg",
-    link: "www.google.com",
-    github: "github.com",
+    name: "Weather App",
+    description: "Weather app using javascript, html, css and webpack",
+    img: "./picture-projects/weather.png",
+    link: "https://jfernando-huarezr.github.io/weather-app/",
+    github: "https://github.com/jfernando-huarezr/weather-app",
   },
   {
-    name: "Project 2",
-    description: "Description 2",
-    img: "dummy.jpg",
-    link: "www.google.com",
-    github: "github.com",
+    name: "Restaurant Page",
+    description: "Restaurant page using html, css, webpack",
+    img: "./picture-projects/ichiraku.png",
+    link: "https://jfernando-huarezr.github.io/odin-restaurant-page/",
+    github: "https://github.com/jfernando-huarezr/odin-restaurant-page",
+  },
+
+  {
+    name: "Etch a Sketch",
+    description: "Game of Etch a Sketch using javascript, html and css",
+    img: "./picture-projects/etch.png",
+    link: "https://jfernando-huarezr.github.io/etch-a-sketch/",
+    github: "https://github.com/jfernando-huarezr/etch-a-sketch",
   },
 ];
 
@@ -40,7 +48,7 @@ export default function drawProjects() {
           /></a>
         </li>
         <li>
-          <a href=""${project.github} target="_blank"
+          <a href="${project.github}" target="_blank"
             ><img src="./imgs/social-media/github.svg" alt="github"
         / ></a>
         </li>
