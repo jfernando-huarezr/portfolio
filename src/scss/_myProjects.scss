@@ -3,6 +3,9 @@
 #myProjects {
   background-color: $primary-light;
   .container {
+    .projects-start {
+      text-align: center;
+    }
     .project-list {
       margin-top: 20px;
       display: flex;
