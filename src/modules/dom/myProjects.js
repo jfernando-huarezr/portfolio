@@ -1,6 +1,8 @@
 import pictureProject1 from "../../imgs/picture-projects/weather.png";
 import pictureProject2 from "../../imgs/picture-projects/ichiraku.png";
 import pictureProject3 from "../../imgs/picture-projects/etch.png";
+import openNew from "../../imgs/social-media/open-in-new.svg";
+import github from "../../imgs/social-media/github.svg";
 
 const projects = [
   {
@@ -48,12 +50,12 @@ export default function drawProjects() {
     <ul class="project-links no-bullets">
         <li>
           <a href="${project.link}" target="_blank"
-            ><img src="./imgs/social-media/open-in-new.svg" alt="online web"
+            ><img src=${openNew} alt="online web"
           /></a>
         </li>
         <li>
           <a href="${project.github}" target="_blank"
-            ><img src="./imgs/social-media/github.svg" alt="github"
+            ><img src=${github} alt="github"
         / ></a>
         </li>
     </ul>

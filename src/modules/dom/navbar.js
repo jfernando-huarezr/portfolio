@@ -1,3 +1,5 @@
+import hamburger from "../../imgs/menu.svg";
+
 const navTitles = [
   { title: "About Me", section: "#aboutMe" },
   { title: "My Stack", section: "#myStack" },
@@ -14,8 +16,10 @@ const navTitles = [
 const nav = document.querySelector("nav");
 const buttonMenu = document.querySelector("nav .menu-control");
 const dropdownMenu = nav.querySelector(".dropdown-menu");
+const imgDropdown = nav.querySelector("button img");
 
 export function toggleNav() {
+  imgDropdown.src = hamburger;
   buttonMenu.addEventListener("click", () => {
     dropdownMenu.classList.add("visible");
   });

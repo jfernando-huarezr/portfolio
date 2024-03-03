@@ -11,6 +11,7 @@ const imgs = document.querySelectorAll("footer img");
 export default function footerImgs() {
   let i = 0;
   imgs.forEach((element) => {
+    // eslint-disable-next-line no-param-reassign
     element.src = array[i];
     i += 1;
   });

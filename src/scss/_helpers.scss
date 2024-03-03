@@ -13,32 +13,24 @@ $secondary-dark: #3f72af;
   display: none;
 }
 
-@mixin hidden {
-  opacity: 0;
-  height: 0;
-  overflow: hidden;
-}
-
-@mixin visible {
-  opacity: 1;
-  height: auto;
-  overflow: hidden;
-}
-
 .container {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-.reveal {
-  position: relative;
-  transform: translateY(150px);
+.fade-in-section {
   opacity: 0;
-  transition: 2s all ease;
+  transform: translateY(80px);
+  visibility: hidden;
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.8s ease-out;
+  will-change: opacity, visibility;
 }
 
-.reveal.active {
-  transform: translateY(0);
+.fade-in-section.is-visible {
   opacity: 1;
+  transform: none;
+  visibility: visible;
 }
